@@ -57,7 +57,7 @@ namespace CapaNegocios
                 X509Certificate2Collection CertCol = store.Certificates;
                 foreach (X509Certificate2 c in CertCol)
                 {
-                    if ((c.Thumbprint == thumbprintCertificado))
+                    if ((c.Thumbprint == thumbprintCertificado.ToUpper()))
                     {
                         cert = c;
                         break;
